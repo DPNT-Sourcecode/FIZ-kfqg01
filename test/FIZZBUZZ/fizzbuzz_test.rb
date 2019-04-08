@@ -16,9 +16,11 @@ class ClientTest < Minitest::Test
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(53), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(135), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal 1, FizzBuzz.new.fizz_buzz(1), 'App should return the number if it does not have all the above conditions'
+    
   end
 
 end
+
 
 
 
