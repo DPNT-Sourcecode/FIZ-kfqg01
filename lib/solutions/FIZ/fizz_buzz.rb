@@ -8,11 +8,9 @@ class FizzBuzz
       return 'fizz'
     elsif number % 5 == 0
       return 'buzz'
-    end 
+    else
+      return number 
+    end
   end
 
 end
-
-
-
-

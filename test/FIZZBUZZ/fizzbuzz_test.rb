@@ -11,8 +11,7 @@ class ClientTest < Minitest::Test
     assert_equal "fizz", FizzBuzz.new.fizz_buzz(3), 'App should return fizz for multiple of 3'
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(5), 'App should return buzz for multiple of 5'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(15), 'App should return fizz buzz for multiple of 3 and 5'
+    assert_equal 1, FizzBuzz.new.fizz_buzz(1), 'App shoulkd return the number if it is not multiple of 3 or 5'
   end
 
 end
-
-
