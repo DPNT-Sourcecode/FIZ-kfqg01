@@ -8,13 +8,13 @@ require_solution 'FIZ'
 class ClientTest < Minitest::Test
 
   def test_fizzbuzz
-    assert_equal "fizz", FizzBuzz.new.fizz_buzz(3), 'App should return fizz for multiple of 3'
+    assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(3), 'App should return fizz for multiple of 3'
     assert_equal "fizz", FizzBuzz.new.fizz_buzz(31), 'App should return fizz for numbers having 3 in them'
-    assert_equal "buzz", FizzBuzz.new.fizz_buzz(5), 'App should return buzz for multiple of 5'
+    assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(5), 'App should return buzz for multiple of 5'
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(56), 'App should return buzz for numbers having 5 in them'
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(52), 'App should return buzz for numbers having 5 in them'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(53), 'App should return fizz buzz for numbers both fizz and buzz'
-    assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(135), 'App should return fizz buzz for numbers both fizz and buzz'
+    assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(135), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal 14, FizzBuzz.new.fizz_buzz(14), 'App should return the number if it does not have all the above conditions'
     assert_equal "deluxe", FizzBuzz.new.fizz_buzz(312),'App should return deluxe if it is greater than 10 and all digits are identical'
     assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(315),'App should return deluxe if it is greater than 10 and all digits are identical'
@@ -26,5 +26,6 @@ class ClientTest < Minitest::Test
 
   end
 end
+
 
 

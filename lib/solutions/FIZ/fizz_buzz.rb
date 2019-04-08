@@ -27,11 +27,12 @@ class FizzBuzz
   end
 
   def is_deluxe?(number)
-    number.to_s.chars.uniq.length == 1 && number > 10
+    (number%3==0 && number.to_s.chars.include?("3")) || (number%5==0 && number.to_s.chars.include?("5"))
   end
 
   def is_fake?(number)
     return number%2 == 1
   end
 end
+
 
