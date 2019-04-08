@@ -15,12 +15,7 @@ class ClientTest < Minitest::Test
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(52), 'App should return buzz for numbers having 5 in them'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(53), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(135), 'App should return fizz buzz for numbers both fizz and buzz'
-    assert_equal 1, FizzBuzz.new.fizz_buzz(1), 'App should return the number if it does not have all the above conditions'
-    
+    assert_equal 14, FizzBuzz.new.fizz_buzz(14), 'App should return the number if it does not have all the above conditions'
   end
 
 end
-
-
-
-
