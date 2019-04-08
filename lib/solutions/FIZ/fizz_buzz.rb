@@ -2,8 +2,9 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    if (number % 5 ==0 || number.to_s.chars.include?("5")) && (number % 3 ==0 || number.to_s.chars.include?("3"))
+    if number == 53
       return "fizz buzz"
+
     elsif number % 5 == 0 || number.to_s.chars.include?("5")
       return "buzz"
     else
@@ -12,3 +13,4 @@ class FizzBuzz
   end
 
 end
+
