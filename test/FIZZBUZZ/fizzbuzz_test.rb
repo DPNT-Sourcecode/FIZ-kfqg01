@@ -16,16 +16,16 @@ class ClientTest < Minitest::Test
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(53), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(135), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal 14, FizzBuzz.new.fizz_buzz(14), 'App should return the number if it does not have all the above conditions'
-    assert_equal "deluxe", FizzBuzz.new.fizz_buzz(312),'App should return deluxe if it is greater than 10 and all digits are identical'
-    assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(315),'App should return deluxe if it is greater than 10 and all digits are identical'
-    assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(7773),'App should return deluxe if it is greater than 10 and all digits are identical'
+    assert_equal "fizz deluxe", FizzBuzz.new.fizz_buzz(312),'App should return deluxe if it is greater than 10 and all digits are identical'
+    assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(315),'App should return deluxe if it is greater than 10 and all digits are identical'
+    assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(7773),'App should return deluxe if it is greater than 10 and all digits are identical'
     assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(555),'App should return fizz buzz deluxe if the number is fizz, buzz and deluxe'
-    assert_equal "deluxe", FizzBuzz.new.fizz_buzz(22),'App should return deluxe if it is greater than 10 and all digits are identical'
+    assert_equal 22, FizzBuzz.new.fizz_buzz(22),'App should return deluxe if it is greater than 10 and all digits are identical'
     assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(333),'App should return fizz deluxe if it is fizz and it is deluxe'
     assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(5555),'App should return buzz deluxe if it is buzz and it is deluxe'
-
   end
 end
+
 
 
 
