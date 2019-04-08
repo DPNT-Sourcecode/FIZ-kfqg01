@@ -19,7 +19,7 @@ class FizzBuzz
 
   private
   def is_fizz?(number)
-    return number % 3 ==0 || number.to_s.chars.include?("3")
+    return  number % 3 ==0 || number.to_s.chars.include?("3")
   end
 
   def is_buzz?(number)
@@ -34,3 +34,4 @@ class FizzBuzz
     return number%2 == 1
   end
 end
+
