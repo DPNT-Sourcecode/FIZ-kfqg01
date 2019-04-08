@@ -26,5 +26,3 @@ class FizzBuzz
     number.to_s.chars.uniq.length == 1 && number > 10
   end
 end
-
-
