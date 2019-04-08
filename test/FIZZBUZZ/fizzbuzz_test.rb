@@ -11,10 +11,11 @@ class ClientTest < Minitest::Test
     assert_equal "fizz", FizzBuzz.new.fizz_buzz(3), 'App should return fizz for multiple of 3'
     assert_equal "fizz", FizzBuzz.new.fizz_buzz(31), 'App should return fizz for numbers having 3 in them'
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(5), 'App should return buzz for multiple of 5'
-    assert_equal "buzz", FizzBuzz.new.fizz_buzz(51), 'App should return buzz for numbers having 5 in them'
+    assert_equal "buzz", FizzBuzz.new.fizz_buzz(56), 'App should return buzz for numbers having 5 in them'
     assert_equal "buzz", FizzBuzz.new.fizz_buzz(52), 'App should return buzz for numbers having 5 in them'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(53), 'App should return fizz buzz for numbers both fizz and buzz'
     assert_equal "fizz buzz", FizzBuzz.new.fizz_buzz(135), 'App should return fizz buzz for numbers both fizz and buzz'
   end
 
 end
+
