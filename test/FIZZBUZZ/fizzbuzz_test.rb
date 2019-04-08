@@ -25,7 +25,3 @@ class ClientTest < Minitest::Test
     assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(5555),'App should return buzz deluxe if it is buzz and it is deluxe'
   end
 end
-
-
-
-
